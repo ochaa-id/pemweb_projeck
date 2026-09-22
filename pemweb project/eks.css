@@ -20,7 +20,7 @@ body {
     margin: 5px;
     padding: 10px;
     border: 1px solid black;
-    background-color: white;
+    background-color: #66a3bf;
 }
  
 .card-profil {
@@ -45,7 +45,7 @@ body {
  
 .card-profil p {
     color: #1a1a1a;
-    border: 1px solid red;
+    border: 1px solid #c8dfdb;
     border-radius: 6px;
     transition: 0.3s;
     line-height: 1.8;
