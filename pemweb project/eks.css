@@ -48,6 +48,7 @@ body {
     border: 1px solid red;
     border-radius: 6px;
     transition: 0.3s;
+    line-height: 1.8;
 }
  
 .card-profil p:hover {
