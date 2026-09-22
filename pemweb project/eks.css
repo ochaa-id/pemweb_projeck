@@ -4,45 +4,52 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f3ff;
 }
- 
+
 .judul {
     color: #3d209c;
     font-weight: bold;
 }
- 
- 
+
 /* PROFIL */
- 
+
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
     padding: 10px;
     border: 1px solid black;
     background-color: #66a3bf;
+    max-width: 1200px;
+    margin: 0 auto;
 }
- 
+
 .card-profil {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px; 
+    max-width: 350px;
+    min-width: 280px;
     padding: 15px;
     border: 1px solid #8c8c8c;
     border-radius: 6px;
     background-color: white;
     transition: 0.3s;
 }
- 
+
 .card-profil:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(123, 44, 123, 0.25);
 }
- 
+
 .card-profil img {
     width: 100%;
     height: 280px;
     border: 3px solid black;
     border-radius: 10px;
 }
- 
+
 .card-profil p {
     color: #1a1a1a;
     border: 1px solid #c8dfdb;
@@ -50,15 +57,14 @@ body {
     transition: 0.3s;
     line-height: 1.8;
 }
- 
+
 .card-profil p:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(123, 44, 123, 0.25);
 }
- 
- 
+
 /* BUKU */
- 
+
 .container-buku {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -69,9 +75,7 @@ body {
     border-radius: 6px;
     background-color: #66a3bf;
 }
- 
-/* Kartu */
- 
+
 .card-buku {
     display: flex;
     flex-direction: column;
@@ -82,14 +86,12 @@ body {
     text-align: center;
     transition: 0.3s;
 }
- 
+
 .card-buku:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(123, 44, 123, 0.25);
 }
- 
-/* Gambar */
- 
+
 .card-buku img {
     display: block;
     width: 100%;
@@ -99,9 +101,7 @@ body {
     border: 3px solid #c8dfdb;
     border-radius: 10px;
 }
- 
-/* Genre */
- 
+
 .genre-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -109,7 +109,7 @@ body {
     gap: 6px;
     margin-bottom: 10px;
 }
- 
+
 .genre-badge {
     margin: 2px;
     padding: 6px 12px;
@@ -118,27 +118,23 @@ body {
     background-color: #66a3bf;
     border-radius: 5px;
 }
- 
-/* Sinopsis */
- 
+
 .card-buku p {
     margin-bottom: 12px;
     font-size: 0.9rem;
     line-height: 1.6;
     color: #1a1a1a;
     text-align: left;
- 
+
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     line-clamp: 5;
     overflow: hidden;
- 
+
     min-height: calc(5 * 1.6em);
 }
- 
-/* Tombol */
- 
+
 .btn-baca {
     width: 100%;
     margin-top: auto;
@@ -151,7 +147,7 @@ body {
     cursor: pointer;
     transition: background-color 0.2s;
 }
- 
+
 .btn-baca:hover {
     color: #ffffff;
     background-color: #2e1577;
